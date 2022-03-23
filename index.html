@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photosmaeght - Capturer vos moments d'émotions</title>
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+                <li> <a href="#">Acceuil</a> </li>
+                <li> <a href="#">À propos</a> </li>
+                <li> <a href="#">Portfolio</a> 
+                    <ul class='sub-menus'>
+                            <li><a href='#'>Mariages</a></li>
+                            <li><a href='#'>Familles</a></li>
+                            <li><a href='#'>Enfants</a></li>
+                            <li><a href='#'>Evénementiel</a></li>
+                            <li><a href='#'>Animaux</a></li>
+                    </ul>
+                <li><a href='#'>Services</a></li>
+                <li><a href='#'>Contact</a></li>
+                <li><a href='#'>Galerie privée</a></li>
+                </li>
+            </ul>
+        </label>
+        <div class="navbar">
+            <div class="icones">
+                <a href="https://fr-fr.facebook.com/people/Photomaeght/100057668701223/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope-circle-check"></i></a>
+            </div>
+            <div class="imgIntro">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div>Cliquez pour explorer <i class="fa-solid fa-share"></i></div>
+        </div>
+        <div class="traitIntro"></div>
+    </header>
+
+    <section class="carrousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> 
+                        <img src="./images/carrousel/header11.jpg" alt="photos_mariage_intro">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/carrousel/header22.jpg" alt="famille_intro">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/carrousel/header44.jpg" alt="bebe_intro">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/carrousel/header55.jpg" alt="mariage_intro">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/carrousel/header33.jpg" alt="arrosoir_intro">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/carrousel/header66.jpg" alt="alliance_intro">
+                    </div>
+                </div>
+            </div>
+
+        <div class="textIntro">
+           <p><i class="fa-solid fa-quote-left"></i>De manière inconsciente, je croise, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie<i class="fa-solid fa-quote-right"></i></p>
+            <p>Steve McCurry</p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+    
+        <div class="categorie"> <a href="#"> <img src="./images/categorie/mariage.jpg" alt="mariage"> </a> </div>
+        <div class="categorie"> <a href="#"> <img src="./images/categorie/famille.JPG" alt="famille"> </a>  </div>
+        <div class="categorie"> <a href="#"> <img src="./images/categorie/enfant.jpg" alt="enfant"> </a>  </div>
+        <div class="categorie"> <a href="#"> <img src="./images/categorie/concert.jpg" alt="concert"> </a>  </div>
+        <div class="categorie"> <a href="#"> <img src="./images/categorie/animaux.JPG" alt="animaux"> </a>  </div>
+        <div class="categorie">
+            <h3>L'émotion d'un instant...</h3>
+            <p>Bien que le temps passe, les souvenirs restent grâce aux photos, c'est pourquoi je mettrai tout mon savoir pour capturer votre histoire. Que ce soit lors d'un événement (mariage, baptême) ou lors d'un shooting au studio ou à l'extérieur, je ferai des souvenirs que vous pourrez revivre à travers vos rires, vos larmes, vos moments de tendresse et de complicité, vos regards en coin qui en disent tellement. Vos étreintes, vos caresses et vos baisers.</p>
+        </div>
+    </section>
+
+    <section class="aPropos">
+        <div class="presentation">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus quae sunt quos porro impedit. Natus dolorem atque at cum culpa impedit, dignissimos enim, reiciendis ipsum consequuntur nesciunt, asperiores eligendi! Corporis reprehenderit enim neque porro excepturi eos nobis. Est possimus voluptas architecto molestias eos iure animi consectetur quis numquam. Magni soluta expedita sit nostrum, enim unde rerum rem amet commodi totam! Ex dolores perferendis voluptatem inventore saepe possimus consequatur necessitatibus deleniti aspernatur .</p>
+            <h2>Patricia Maeght</h2>
+        </div>
+        <div class="photo">
+            <img src="./images/photographe.jpg" alt="photographe">
+        </div>
+    </section>
+
+    <div class="parallaxe"></div>
+    <section class="services">
+        <div class="conteneurServices">
+            <div class="cart aos-item"
+                data-aos="zoom-out-right"
+                data-aos-duration="1500">
+                <img src="./images/iconAnts.png" alt="logo">
+                <p>Photos conformes pour vos documents officiels, nous sommes agrée "agence national des titres sécurisés"...</p>
+                <a class="enSavoirPlus" href="services.html">En savoir plus</a>
+                
+            </div>
+            <div class="cart aos-item"
+                data-aos="zoom-out"
+                data-aos-duration="1500">
+                <i class="fa-solid fa-gift-card"></i>
+                <p>Offrez un cadeau qui reste!!! Réaliser une photo c'est mettre son quotidien en pause...</p>
+                <a class="enSavoirPlus" href="services.html">En savoir plus</a>
+                
+            </div>
+            <div class="cart aos-item"
+                data-aos="zoom-out-left"
+                data-aos-duration="1500">
+                <i class="fa-solid fa-camera-polaroid"></i>
+                <p>Restauration de photos anciennes, redonnez vie à vos souvenirs d'antan...</p>
+                <a class="enSavoirPlus" href="services.html">En savoir plus</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="informations">
+            <div><h2>Informations</h2></div>
+            <div class="infos">
+                <div id="carte"></div> 
+                <div class="horaires">
+                    <h3>Horaires</h3>
+                    <p p class="paragraphe1">Je suis présente le LUNDI, MERCREDI et VENDREDI dans la matinéé.</p>
+                    <p class="paragraphe2">(Sauf absence pour rendez-vous extérieur)</p>
+                    <h3>Les autres jours</h3>
+                    <p>Vous avez la possibilité de venir directement au studio, <br>si je suis là je vous accueillerez avec plaisir. <br>Cependant pour éviter tout desagréments il est conseillé de prendre rendez-vous</p>
+                    <div class="icones">
+                        <div class="tel">
+                            <img src="./images/icones/telephone.png" alt="telephone">
+                            <p>06.50.19.23.21 </p>
+                            <a href="https://fr-fr.facebook.com/people/Photomaeght/100057668701223/"> <img class="facebook" src="./images/icones/facebook.png" alt=""> </a>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+
+
+
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/a84d56ab83.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
