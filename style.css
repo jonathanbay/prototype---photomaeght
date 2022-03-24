@@ -8,7 +8,7 @@ body {
 *, *:before, *:after 
 { box-sizing: border-box; }
 
-html { font-size: 18px; }
+html { font-size: 18px; scroll-behavior: smooth;}
 
 body {
   color: #000;
@@ -16,6 +16,7 @@ body {
   line-height: 1.6;
   background-color: rgba(244, 232, 212, 1);
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 label .menu {
   position: absolute;
@@ -110,12 +111,27 @@ label a {
     justify-content: space-around;
 }
 .fa-brands, .fa-solid{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 20px;
     color: rgb(48, 47, 47);
 }
 .imgIntro img {
     height: 150px;
+}
+.clique{
+    margin-top: 50px;
+    position: relative;
+}
+.clique::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: 100px;
+    background: url(./images/flecheIntro.png);
+    z-index: 10;
+
 }
 .traitIntro {
     height: 1px;
@@ -180,7 +196,6 @@ label a {
     margin: 0 10px;
     text-align: center;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
 }
 /* ******************* portfoilo *************** */
 .portfolio {
@@ -267,107 +282,168 @@ label a {
     height: 500px;
     width: 100%;
 }
-.services {
-    background: rgba(0, 0, 0, 0.459);
-    max-width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: relative;
-    z-index: 2;
-    height: 100%;
-}
-
 /* ********************service *************** */
 
-.conteneurServices {
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-flow: row wrap;
- }
-.cart {
-    height: 320px;     
-    width: 250px;  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.603);
-    border-radius: 10px;
-    margin:10px;
+.services {
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(244, 232, 212, 1);
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-template-rows: 300px 400px 300px;
+    grid-template-areas: 
+        " f b d"
+        " a b d"
+        " g c e";
 }
-.cart img {
-    height: 80px;
-    width: 80px;
-    margin-bottom: 50px;
-    margin: 10px auto 30px auto;
-    
+.imgService:nth-child(1) {
+    margin: 25px;
+    grid-area: a;
     
 }
-.cart p {
-    text-align: center;
-    margin:30px 20px 30px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.imgService:nth-child(2) {
+   margin: 25px;
+    grid-area: c;
 }
-/* ************** informations **************** */
+.imgService:nth-child(3) {
+    margin: 25px;
+    grid-area: d;
+}
+.imgService:nth-child(4) {
+    margin: 25px;
+    grid-area: b;
+}
+.imgService:nth-child(5) {
+    background-color: rgba(244, 232, 212, 1);
+    margin: 25px;
+    grid-area: e;
+}
+.imgService img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte1, .texte3 {
+    margin-top: 40px;
+    color: black;
+}
+.texte2 {
+    margin-top: 120px;
+    color: black;
+}
+.texte3 {
+    margin-top: 100px;
+    color: black;
+}
 
-#carte {
-    width: 450px;
-    height: 520px;
-    margin: 5px;
-    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.637);
-    border-radius: 5px;
+/* ************** informations **************** */
+.informations {
+    height: 300px;
 }
-    .infos {
+    .horaires {
+        /* height: 300px; */
+        margin: 80px auto;
+        width: 50%;
+        background: rgba(0, 0, 0, 0.459);
+        box-shadow: -10px 15px 25px 0 rgba(0, 0, 0, 0.637);
+        border-radius: 5px;
+        position: relative;
+    }
+    .horaires::after {
+        content: "";
+        background: url(./images/studio.jpg) no-repeat left/cover;
+        position: absolute;
+        top: -10px;
+        transform: rotate(10deg);
+        right: -50px;
+        width: 150px;
+        height: 150px;
+        z-index: 3;
+        box-shadow: -10px 15px 25px 0 rgba(0, 0, 0, 0.637);
+    }
+    .horaires h3, .horaires p {
+        font-size: 18px;
+        margin: 5px 20px;
+        text-align: center;
+        color: rgba(244, 232, 212, 1);
+    }
+    .horaires h3 {
+        text-decoration: underline;
+    }
+    .horaires .textCouleur {
+        color: rgb(185, 52, 52);
+        margin: 0 auto;
+    }
+    /* **************** carte leaflet ************** */
+    #carte {
+        width: 80%;
+        height: 300px;
+        margin: 5px auto;
+        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.637);
+        border-radius: 5px;
+    }
+    /* ***************** formulaire de contact *********** */
+    .contact {
+        height: 600px;
+    }
+    .contact {
+        background: rgba(0, 0, 0, 0.459);
+    }
+    form{
+        margin: 50px auto;
+        max-width: 900px;
+        align-items: center;
+    }
+    .formulaire {
+        text-align: center;
+        margin: 50px auto;
+
+    }
+    input, textarea, .btnForm {
+        border: none;
+        width: 55%;
+        padding: 15px 10px;
+        margin: 3px 0px;
+        font-size: 18px;
+        /* font-family: "advent pro", sans serif; */
+        border-radius: 8px;
+    }
+    textarea{
+        height:120px;
+        resize : none;
+    }
+    .btnForm{
+        font-size: 1.5em;
+        background-color:#ffffe9;
+        margin-bottom: 10px;
+        
+    }
+    .btnForm:hover{
+        background-color:#6d071a;
+        color: #fffae1;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    /* *********************** footer *************** */
+    .containerFooter {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-flow: row wrap;
+        height: 150px;
+        background-color: rgba(244, 232, 212, 1);
     }
-    .horaires {
-        height: 520px;
-        width: 450px;
-        background-color: rgba(245, 245, 245, 0.63);
-        box-shadow: -10px 15px 25px 0 rgba(0, 0, 0, 0.637);
-        border-radius: 5px;
+    .containerFooter a {
+        text-decoration: none;
     }
-    .horaires h3 {
-        font-size: 22px;
-        text-align: center;
-        text-decoration: underline;
-    }
-    .horaires p {
+    .containerFooter p {
         font-size: 25px;
-        margin: 20px;
-        /* font-family: 'Montserrat', sans-serif; */
-        font-family: 'Dancing Script', cursive;
-        text-align: center;
+        color: rgba(0, 0, 0, 0.459);
     }
-    .tel {
-        display: flex;
-        align-items: center;
-        margin: 0 20px;
-        justify-content: center;
+    .containerFooter img {
+        height: 100px;
     }
-    .icones {
-        display: flex;
-        flex-direction: column;
-    }
-    .tel img, .facebook {
-        width: 40px;
-        height: 40px;
-    }
-    .paragraphe2 {
-        color: red;
-    }
-    .facebook {
-        margin: 10px 0 0 25px;
-        width: 35px;
-        height: 35px;
-    }
-    .facebook:hover {
-        color: green;
-        transform: scale(1.1);
-    }
+
+
+    
+    
