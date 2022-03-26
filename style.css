@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
 body {
     background-color: rgba(244, 232, 212, 1);
     margin: 0;
@@ -139,6 +142,7 @@ label a {
     object-fit: cover;
     z-index: 3;
 }
+
 .traitIntro {
     height: 1px;
     width: 70%;
@@ -205,10 +209,10 @@ label a {
 }
 /* ******************* portfoilo *************** */
 .portfolio {
-    height: 600px;
+    height: 630px;
     width: 100%;
     background: rgba(0, 0, 0, 0.459);
-    margin-top: 50px;
+    margin: 70px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 250px 100px 250px;
@@ -218,38 +222,79 @@ label a {
         "paragraphe a e d";
 }
 .categorie:nth-child(1) {
-    margin: 25px;
+    /* margin: 25px; */
+    margin: 40px 25px 25px 20px;
     grid-area: a;
+    position: relative;
     
 }
 .categorie:nth-child(2) {
-   margin: 25px;
+    margin: 40px 25px 25px 25px;
     grid-area: c;
+    position: relative;
 }
 .categorie:nth-child(3) {
-    margin: 25px;
+    margin: 40px 25px 25px 25px;
     grid-area: d;
+    position: relative;
 }
 .categorie:nth-child(4) {
-    margin: 25px;
+    margin: 40px 25px 25px 25px;
     grid-area: e;
+    position: relative;
 }
 .categorie:nth-child(5) {
-    margin: 25px;
+    margin: 40px 25px 25px 25px;
     grid-area: b;
+    position: relative;
 }
 .categorie:nth-child(6) {
     grid-area: paragraphe;
     text-align: justify;
-    margin: auto 20px;
+    margin: 0px 20px;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Parisienne', cursive;
 }
 .categorie img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.textePortfolio p{
+    padding-bottom: 30px;
+}
+.mariage::before, .famille::before, .enfant::before, .concert::before, .animaux::before {
+    position: absolute;
+    width: 130px;
+    height: 35px;
+    top: -36px;
+    right: 0px;
+    color: whitesmoke;
+    font-size: 31px;
+    margin: auto;
+    z-index: 3;
+    font-family: 'Parisienne', cursive;
+}
+.mariage::before {
+    content: "Mariages";
+}
+.famille::before {
+    content: "Familles";
+}
+.enfant::before {
+    content:"Enfants";
+}
+.concert::before {
+    content:"Evénements";
+}
+.animaux::before {
+    content:"Animaux";
+}
+.categorie:hover {
+    opacity: 0.8;
+}
+
 /* ******************* A propos *************** */
 .aPropos {
     display: flex;
@@ -289,6 +334,35 @@ label a {
 }
 /* ********************service *************** */
 .services {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.servicePhoto, .serviceCadeau, .serviceRenovation {
+    width: 300px;
+    height: 350px;
+    margin: 10px ;
+}
+.servicePhoto img, .serviceCadeau img, .serviceRenovation img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.btnServices p {
+    text-align: center;
+    border: 1px solid rgb(187, 13, 13);;
+    width: 70%;
+    padding: 16px;
+}
+.btnServices {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .services {
     height: auto;
     width: 100%;
 }
@@ -340,12 +414,12 @@ label a {
     width: 100%;
     /* height: 505px;
     margin: 20px; */
-}
+/* }
 .restauration img {
     width: 400px;
     height: 500px;
     object-fit: cover;
-}
+}  */
 
 /* ************** informations **************** */
 .informations {
@@ -479,7 +553,7 @@ label a {
     .portfolio {
         height: 1650px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 250px 300px 250px 350px 500px;
+        grid-template-rows: 300px 300px 250px 350px 500px;
         grid-template-areas: 
             "paragraphe paragraphe "
             "a b"

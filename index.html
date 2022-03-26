@@ -19,7 +19,7 @@
             <span class="menu"> <span class="hamburger"></span> </span>
             <ul>
                 <li> <a href="#">Acceuil</a> </li>
-                <li> <a href="#">À propos</a> </li>
+                <li> <a href="#aPropos">À propos</a> </li>
                 <li> <a href="#">Portfolio</a> 
                     <ul class='sub-menus'>
                             <li><a href='#'>Mariages</a></li>
@@ -78,20 +78,19 @@
     </section>
 
     <section class="portfolio">
-    
-        <div class="categorie"> <a href="#"> <img src="./images/categorie/mariage.jpg" alt="mariage"> </a> </div>
-        <div class="categorie"> <a href="#"> <img src="./images/categorie/famille.JPG" alt="famille"> </a>  </div>
-        <div class="categorie"> <a href="#"> <img src="./images/categorie/enfant.jpg" alt="enfant"> </a>  </div>
-        <div class="categorie"> <a href="#"> <img src="./images/categorie/concert.jpg" alt="concert"> </a>  </div>
-        <div class="categorie"> <a href="#"> <img src="./images/categorie/animaux.JPG" alt="animaux"> </a>  </div>
-        <div class="categorie">
+        <div class="categorie mariage"> <a href="#"> <img src="./images/categorie/mariage.jpg" alt="mariage"> </a> </div>
+        <div class="categorie famille"> <a href="#"> <img src="./images/categorie/famille.JPG" alt="famille"> </a>  </div>
+        <div class="categorie enfant"> <a href="#"> <img src="./images/categorie/enfant.jpg" alt="enfant"> </a>  </div>
+        <div class="categorie concert"> <a href="#"> <img src="./images/categorie/concert.jpg" alt="concert"> </a>  </div>
+        <div class="categorie animaux"> <a href="#"> <img src="./images/categorie/animaux.JPG" alt="animaux"> </a>  </div>
+        <div class="categorie textePortfolio">
             <h3>L'émotion d'un instant...</h3>
             <p>Bien que le temps passe, les souvenirs restent grâce aux photos, c'est pourquoi je mettrai tout mon savoir pour capturer votre histoire. Que ce soit lors d'un événement (mariage, baptême) ou lors d'un shooting au studio ou à l'extérieur, je ferai des souvenirs que vous pourrez revivre à travers vos rires, vos larmes, vos moments de tendresse et de complicité, vos regards en coin qui en disent tellement. Vos étreintes, vos caresses et vos baisers.</p>
         </div>
     </section>
 
-    <section class="aPropos">
-        <div class="presentation">
+    <section class="aPropos" id="aPropos" >
+        <div class="presentation" >
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus quae sunt quos porro impedit. Natus dolorem atque at cum culpa impedit, dignissimos enim, reiciendis ipsum consequuntur nesciunt, asperiores eligendi! Corporis reprehenderit enim neque porro excepturi eos nobis. Est possimus voluptas architecto molestias eos iure animi consectetur quis numquam. Magni soluta expedita sit nostrum, enim unde rerum rem amet commodi totam! Ex dolores perferendis voluptatem inventore saepe possimus consequatur necessitatibus deleniti aspernatur .</p>
             <h2>Patricia Maeght</h2>
         </div>
@@ -108,34 +107,39 @@
             data-aos-duration="1500">
                 <div class="servicePhoto">
                     <a href="#"> <img src="./images/photo-identite.jpg" alt="photo_identité"> </a>
-                    <div class="texte1">
+                    <div>
                         <p>Photos conformes pour vos documents officiels, nous sommes agrée "agence national des titres sécurisés"...</p>
+                    </div>
+                    <div class="btnServices">
+                        <p>En savoir plus →</p> 
                     </div>
                 </div>
         </div>
-
         <div class="cadeau cart aos-item"
             data-aos="zoom-out"
             data-aos-duration="1500">
-            <div class="serviceCadeau">
-                <div class="texte2">
-                    <p>Offrez un cadeau qui reste!!! Réaliser une photo c'est mettre son quotidien en pause...</p>
+                <div class="serviceCadeau">
+                    <a href="#"> <img src="./images/photo_cadeau.jpg" alt="photo_famille"> </a>
+                    <div>
+                        <p>Offrez un cadeau qui reste!!! Réaliser une photo c'est mettre son quotidien en pause...</p>
+                    </div>
+                    <div class="btnServices">
+                        <p>En savoir plus →</p> 
+                    </div>
                 </div>
-                <a href="#"> <img src="./images/photo_cadeau.jpg" alt="photo_famille"> </a>
-            </div>
-            
-            
         </div>
-
         <div class="restauration cart aos-item"
             data-aos="zoom-out-right"
             data-aos-duration="1500">
-            <div class="serviceRenovation">
-                <a href="#"> <img src="./images/old_photo.jpg" alt="photo_ancienne"> </a>
-                <div class="texte3">
-                    <p>Restauration de photos anciennes, redonnez vie à vos souvenirs d'antan...</p>
+                <div class="serviceRenovation">
+                    <a href="#"> <img src="./images/old_photo.jpg" alt="photo_ancienne"> </a>
+                    <div>
+                        <p>Restauration de photos anciennes, redonnez vie à vos souvenirs d'antan...</p>
+                    </div>
+                    <div class="btnServices">
+                        <p>En savoir plus →</p> 
+                    </div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -178,8 +182,6 @@
                 <div><button class="btnForm">envoyer</button></div>
             </form>
         </div> 
-
-        
     </section>
     <div class="traitIntro"></div>
 
