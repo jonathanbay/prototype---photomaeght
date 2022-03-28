@@ -224,6 +224,7 @@ label li {
 }
 .categorie:nth-child(1) {
     margin: auto;
+    padding-left: 3px;
     grid-area: paragraphe;
     text-align: justify;
     margin: 0px 20px;
