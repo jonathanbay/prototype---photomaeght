@@ -3,11 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 
-body {
-    background-color: rgba(244, 232, 212, 1);
-    margin: 0;
-    padding: 0;
-}
+
 /* *************** hamburger menus ************ */
 *, *:before, *:after 
 { box-sizing: border-box; }
@@ -22,6 +18,8 @@ body {
   background-color: rgba(244, 232, 212, 1);
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 label .menu {
   position: absolute;
@@ -572,7 +570,7 @@ label li {
     .icones a {display: none;}
     .imgIntro, .clique {margin-right: 150px;}
     .photo {margin: 10px auto;}
-    .swiper {width: 800px;}
+    .swiper {width: 800px; margin: auto;}
     .swiper::before {width: 780px;}
 }
 @media screen and (max-width: 959px) {
@@ -588,8 +586,8 @@ label li {
         left: 110px;
         transform: rotate(40deg);
     }
-    .swiper {width: 550px;}
-    .swiper::before {width: 530px;}
+    .swiper {width: 98%; margin: auto;}
+    .swiper::before {width: 96%;}
     .containerFooter p {font-size: 16px;}
 }
 @media screen and (max-width: 691px) {
@@ -614,8 +612,8 @@ label li {
     .services {
         height: 1900px;
     }
-    /* .swiper {width: 600px;}
-    .swiper::before {width: 530px;} */
+    .swiper {width: 600px;}
+    .swiper::before {width: 98%; margin: auto;}
 }
 @media screen and (max-width: 656px) {
     .clique::after {
@@ -625,16 +623,9 @@ label li {
     }
 }
 @media screen and (max-width: 577px) {
-    .navbar {
-        flex-direction: column;
-    }
-    .imgIntro {
-        margin: auto;
-        order: 2;
-    }
-    .clique {
-        display: none;
-    }
-    /* .swiper {width: 500px;}
-    .swiper::before {width: 480px;} */
+    .navbar {flex-direction: column;}
+    .imgIntro {margin: auto;order: 2;}
+    .clique {display: none;}
+    .swiper {width: 500px;}
+    .swiper::before {width: 480px;}
 }
