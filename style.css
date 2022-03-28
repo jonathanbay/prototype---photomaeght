@@ -109,6 +109,9 @@ label a {
   color: #000;
   text-decoration: none;
 }
+label li {
+    list-style-type: none;
+}
 /* ************** navbar ************** */
 .navbar {
     display: flex;
