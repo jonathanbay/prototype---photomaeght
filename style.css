@@ -154,8 +154,8 @@ label li {
 }
 /* ***********animation carrousel ****************** */
 .swiper {
-    width: 400px;
-    height: 500px;
+    width: 450px;
+    height: 520px;
     margin: 50px 100px;
     position: relative;
 }
@@ -163,8 +163,8 @@ label li {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 380px;
-    height: 480px;
+    width: 430px;
+    height: 500px;
     content: "";
     border: 1px solid yellowgreen;
     z-index: 2;
@@ -215,7 +215,7 @@ label li {
     height: 630px;
     width: 100%;
     background: rgba(0, 0, 0, 0.459);
-    margin: 70px auto;
+    margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 250px 100px 250px;
@@ -225,39 +225,39 @@ label li {
         "paragraphe a e d";
 }
 .categorie:nth-child(1) {
-    /* margin: 25px; */
-    margin: 40px 25px 25px 20px;
-    grid-area: a;
-    position: relative;
-    
-}
-.categorie:nth-child(2) {
-    margin: 40px 25px 25px 25px;
-    grid-area: c;
-    position: relative;
-}
-.categorie:nth-child(3) {
-    margin: 40px 25px 25px 25px;
-    grid-area: d;
-    position: relative;
-}
-.categorie:nth-child(4) {
-    margin: 40px 25px 25px 25px;
-    grid-area: e;
-    position: relative;
-}
-.categorie:nth-child(5) {
-    margin: 40px 25px 25px 25px;
-    grid-area: b;
-    position: relative;
-}
-.categorie:nth-child(6) {
+    margin: auto;
     grid-area: paragraphe;
     text-align: justify;
     margin: 0px 20px;
     color: whitesmoke;
     font-size: 25px;
     font-family: 'Parisienne', cursive;
+    
+}
+.categorie:nth-child(2) {
+    margin: 40px 25px 25px 25px;
+    grid-area: a;
+    position: relative;
+}
+.categorie:nth-child(3) {
+    margin: 40px 25px 25px 25px;
+    grid-area: c;
+    position: relative;
+}
+.categorie:nth-child(4) {
+    margin: 40px 25px 25px 25px;
+    grid-area: d;
+    position: relative;
+}
+.categorie:nth-child(5) {
+    margin: 40px 25px 25px 25px;
+    grid-area: e;
+    position: relative;
+}
+.categorie:nth-child(6) {
+    grid-area: b;
+    margin: 40px 25px 25px 25px;
+    position: relative;
 }
 .categorie img {
     width: 100%;
@@ -353,15 +353,18 @@ label li {
     height: 100%;
     object-fit:cover;
 }
-.btnServices p {
+.btnServices button {
     text-align: center;
-    border: 1px solid rgb(187, 13, 13);;
-    width: 70%;
+    border: 1px solid rgb(187, 13, 13);
+    width: 150px;
     padding: 16px;
 }
 .btnServices {
     display: flex;
     justify-content: center;
+}
+.btnServices button:hover {
+    border: 2px solid rgb(187, 13, 13);
 }
 
 
@@ -429,7 +432,6 @@ label li {
     height: auto;
 }
     .horaires {
-        /* height: 300px; */
         margin: 80px auto;
         width: 50%;
         background: rgba(0, 0, 0, 0.459);
@@ -554,9 +556,9 @@ label li {
 }
 @media screen and (max-width: 1300px) {
     .portfolio {
-        height: 1650px;
+        height: 1750px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 300px 250px 350px 500px;
+        grid-template-rows: 350px 300px 250px 350px 500px;
         grid-template-areas: 
             "paragraphe paragraphe "
             "a b"
@@ -570,6 +572,11 @@ label li {
     .icones a {display: none;}
     .imgIntro, .clique {margin-right: 150px;}
     .photo {margin: 10px auto;}
+    .swiper {width: 800px;}
+    .swiper::before {width: 780px;}
+}
+@media screen and (max-width: 959px) {
+    .services {height: 1250px}
 }
 @media screen and (max-width: 800px) {
     /* .icones a {display: none;} */
@@ -583,9 +590,32 @@ label li {
     }
     .swiper {width: 550px;}
     .swiper::before {width: 530px;}
-    .containerFooter p {
-        font-size: 16px;
+    .containerFooter p {font-size: 16px;}
+}
+@media screen and (max-width: 691px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 2500px;
     }
+    .categorie {
+        width: 90%;
+        height: 350px;
+    }
+    .categorie img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .mariage {
+        background-color: beige;
+    }
+    .services {
+        height: 1900px;
+    }
+    /* .swiper {width: 600px;}
+    .swiper::before {width: 530px;} */
 }
 @media screen and (max-width: 656px) {
     .clique::after {
@@ -593,4 +623,18 @@ label li {
         left: 80px;
         transform: rotate(50deg);
     }
+}
+@media screen and (max-width: 577px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .imgIntro {
+        margin: auto;
+        order: 2;
+    }
+    .clique {
+        display: none;
+    }
+    /* .swiper {width: 500px;}
+    .swiper::before {width: 480px;} */
 }
