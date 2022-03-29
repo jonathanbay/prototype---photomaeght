@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 
@@ -8,7 +7,7 @@
 *, *:before, *:after 
 { box-sizing: border-box; }
 
-html { font-size: 18px; scroll-behavior: smooth; overflow-x: hidden;}
+html { font-size: 18px; scroll-behavior: smooth;}
 
 
 body {
@@ -23,13 +22,18 @@ body {
 }
 label .menu {
   position: absolute;
-  right: -100px;
-  top: -100px;
+  /* right: -100px;
+  top: -100px; */
+  right: 0px;
+  top: 0px;
   z-index: 100;
-  width: 200px;
-  height: 200px;
+  /* width: 200px;
+  height: 200px; */
+  width: 90px;
+  height: 90px;
   background: #FFF;
-  border-radius: 50% 50% 50% 50%;
+  /* border-radius: 50% 50% 50% 50%; */
+  border-radius:50% 0 50% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
@@ -38,8 +42,11 @@ label .menu {
 }
 label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
+  /* top: 135px;
+  left: 50px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 30px;
   height: 2px;
   background: rgb(48, 47, 47);
@@ -367,66 +374,6 @@ label li {
     border: 2px solid rgb(187, 13, 13);
 }
 
-
-/* .services {
-    height: auto;
-    width: 100%;
-}
-.identite {
-    width: 100%;
-    margin: 0 20px 20px 20px;
-}
-.identite img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-.texte1, .texte2, .texte3 {
-    width: 500px;
-    height: auto;
-    color: rgb(187, 13, 13);
-    font-family: 'Indie Flower', cursive;
-    margin: 5px 30px;
-}
-
-.servicePhoto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-.serviceCadeau {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-.serviceRenovation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-.cadeau {
-    width: 100%;
-    margin: 20px 20px;
-}
-.cadeau img {
-    width: 500px;
-    height: 350px;
-    object-fit: cover;
-}
-.restauration {
-    width: 100%;
-    /* height: 505px;
-    margin: 20px; */
-/* }
-.restauration img {
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
-}  */
-
 /* ************** informations **************** */
 .informations {
     height: auto;
@@ -599,21 +546,14 @@ label li {
         justify-content: center;
         height: 2500px;
     }
-    .categorie {
-        width: 90%;
-        height: 350px;
-    }
+    .categorie {width: 90%; height: 350px;}
     .categorie img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .mariage {
-        background-color: beige;
-    }
-    .services {
-        height: 1900px;
-    }
+    .mariage {background-color: beige;}
+    .services {height: 1950px;}
     .swiper {width: 600px;}
     .swiper::before {width: 98%; margin: auto;}
 }
@@ -630,4 +570,13 @@ label li {
     .clique {display: none;}
     .swiper {width: 500px;}
     .swiper::before {width: 480px;}
+    .horaires {width: 80%}
+    .horaires::after {
+        top: -140px;
+        transform: rotate(0deg);
+        left: 50%;
+        transform: translate(-50%);
+        width: 200px;
+        height: 150px;
+   }
 }
