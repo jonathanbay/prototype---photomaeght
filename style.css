@@ -134,7 +134,7 @@ label li {
 .clique{
     width: 200px;
     margin: 100px 60px 0 0;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Parisienne', cursive;
     color: rgb(187, 13, 13);
     position: relative;
 }
@@ -211,7 +211,7 @@ label li {
 }
 .textIntro {
     width: 400px;
-    margin: 0 10px;
+    margin: 0 15px;
     text-align: center;
     font-size: 18px;
 }
@@ -230,13 +230,13 @@ label li {
         "paragraphe a e d";
 }
 .categorie:nth-child(1) {
-    margin: auto;
-    padding-left: 3px;
+    margin: 20px;
+    padding: 5px;
     grid-area: paragraphe;
     text-align: justify;
     margin: 0px 20px;
     color: whitesmoke;
-    line-height: 1.1em;
+    line-height: 1.2em;
     font-size: 25px;
     font-family: 'Parisienne', cursive;
     
@@ -321,10 +321,12 @@ label li {
 .presentation p {
     text-align: center;
     font-size: 18px;
+    margin: 10px 20px;
 }
 .presentation h2 {
     text-align: end;
     font-size: 18px;
+    margin: 0 20px;
 }
 .photo {
     width: 400px;
@@ -337,7 +339,7 @@ label li {
 }
 /* **************** parallaxe ************** */
 .parallaxe {
-    background: url(./images/parallaxe.jpg) no-repeat fixed 50% 50%;
+    background: url(./images/parallaxe.jpg) no-repeat fixed 50% 60%;
     background-size: cover; 
     height: 500px;
     width: 100%;
@@ -514,6 +516,7 @@ label li {
             "c c";
     }
     .portfolio h3 {text-align: center;}
+    .categorie:nth-child(1) {line-height: 1.7em;}
 }
 @media screen and (max-width: 1019px) {
     .icones a {display: none;}
@@ -531,7 +534,7 @@ label li {
     /* .photo {margin: 10px auto;} */
     .imgIntro img {height: 110px;}
     .clique::after {
-        bottom: 25px;
+        bottom: 35px;
         left: 110px;
         transform: rotate(40deg);
     }
@@ -555,11 +558,11 @@ label li {
     .mariage {background-color: beige;}
     .services {height: 1950px;}
     .swiper {width: 600px;}
-    .swiper::before {width: 98%; margin: auto;}
+    .swiper::before {width: 580; margin: auto;}
 }
 @media screen and (max-width: 656px) {
     .clique::after {
-        bottom: 60px;
+        bottom: 40px;
         left: 80px;
         transform: rotate(50deg);
     }
@@ -568,8 +571,8 @@ label li {
     .navbar {flex-direction: column;}
     .imgIntro {margin: auto;order: 2;}
     .clique {display: none;}
-    .swiper {width: 500px;}
-    .swiper::before {width: 480px;}
+    .swiper {max-width: 500px;}
+    .swiper::before {max-width: 480px;}
     .horaires {width: 80%}
     .horaires::after {
         top: -140px;
@@ -579,4 +582,19 @@ label li {
         width: 200px;
         height: 150px;
    }
+   .infos {font-size: 18px;}
 }
+@media screen and (max-width: 700px) {
+    .categorie:nth-child(1) {line-height: 1.2em;}
+    .portfolio {
+        grid-template-rows: 400px 300px 250px 350px 500px;
+    }
+}
+@media screen and (max-width: 505px) {
+    .portfolio h3 {margin: 0;}
+    .categorie:nth-child(1) {line-height: 1em;}
+    .portfolio {
+        grid-template-rows: 500px 300px 250px 350px 500px;
+    }
+}
+
