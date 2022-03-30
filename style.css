@@ -592,9 +592,7 @@ label li {
 }
 @media screen and (max-width: 505px) {
     .portfolio h3 {margin: 0;}
-    .categorie:nth-child(1) {line-height: 1em;}
-    .portfolio {
-        grid-template-rows: 500px 300px 250px 350px 500px;
-    }
+    .categorie:nth-child(1) {line-height: 1em; height:400px}
+    
 }
 
