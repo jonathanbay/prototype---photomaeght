@@ -7,7 +7,7 @@
 *, *:before, *:after 
 { box-sizing: border-box; }
 
-html { font-size: 18px; scroll-behavior: smooth;}
+html { font-size: 18px; scroll-behavior: smooth; width:100%;}
 
 
 body {
@@ -219,7 +219,8 @@ label li {
 .portfolio {
     height: 630px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.459);
+    /* background: rgba(0, 0, 0, 0.459); */
+    background: #B89D8A;
     margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -383,14 +384,15 @@ label li {
     .horaires {
         margin: 80px auto;
         width: 50%;
-        background: rgba(0, 0, 0, 0.459);
+        /* background: rgba(0, 0, 0, 0.459); */
+        background: #B89D8A;
         box-shadow: -10px 15px 25px 0 rgba(0, 0, 0, 0.637);
         border-radius: 5px;
         position: relative;
     }
     .horaires::after {
         content: "";
-        background: url(./images/studio.jpg) no-repeat left/cover;
+        background: url(images/studio.jpg) no-repeat left/cover;
         position: absolute;
         top: -10px;
         transform: rotate(10deg);
@@ -433,11 +435,9 @@ label li {
         align-items: center;
         flex-flow: row wrap;
     }
-    
     .facebook {
         margin-bottom: 30px;
     }
-
     .formulaire {
         width: 600px;
     } 
@@ -494,8 +494,48 @@ label li {
     .containerFooter img {
         height: 100px;
     }
+    /* *********************************page portfolio mariage ****************** */
+    .retour {
+        /* margin: 100px 200px ; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 300px;
+        margin: 40px auto;
+        background-color: rgba(0, 0, 0, 0.459);;
+        -webkit-clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 14% 49%, 25% 0%);
+        clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 14% 49%, 25% 0%);
 
-/* ********************** responsive  *************** */
+
+        /* position: relative; */
+    }
+    .retour p {
+        color: whitesmoke;
+        margin-left: 35px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+    .retour a {
+        text-decoration: none;
+    }
+    .galerie {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-flow: row wrap;
+    }
+    .galerie img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 10px;
+        width: 250px;
+        height: 350px;
+    }
+
+
+/* ********************** responsive page d'accueil *************** */
 @media screen and (max-width: 1335px) {
     .horaires::after {
         top: -100px;
@@ -594,5 +634,8 @@ label li {
     .portfolio h3 {margin: 0;}
     .categorie:nth-child(1) {line-height: 1em; height:400px}
     
+}
+@media screen and (max-width: 467px) {
+    label .iconesMenus {display: none;}
 }
 
