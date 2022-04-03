@@ -344,12 +344,12 @@ label li {
 .presentation p {
     text-align: center;
     font-size: 18px;
-    margin: 10px 20px;
+    margin: 10px 40px;
 }
 .presentation h2 {
     text-align: end;
     font-size: 18px;
-    margin: 0 20px;
+    margin: 0 40px;
 }
 .photo {
     width: 400px;
@@ -549,10 +549,6 @@ label li {
         text-align: center;
         flex-flow: row wrap;
     }
-    /* .galerie .containerImg {
-        margin: 0;
-        padding: 0;
-    } */
     .galerie img {
         /* width: 100%; */
         /* height: 100%; */
@@ -561,7 +557,22 @@ label li {
         width: 500px;
         height: auto;
     }
-
+/* *******************style page mes services******************** */
+.identiteService, .cadeauService, .restaurationPhoto {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+.identiteService img, .cadeauService img, .restaurationPhoto img {
+    width: 300px;
+    margin: 30px;
+}
+.identiteService p, .cadeauService p, .restaurationPhoto p {
+    width: 500px;
+    margin: 30px;
+}
 
 /* ********************** responsive page d'accueil *************** */
 @media screen and (max-width: 1335px) {
@@ -672,4 +683,13 @@ label li {
 }
 @media screen and (max-width: 416px) {
     .galerie img {width: 350px;}
+    .servicePhoto, .serviceCadeau, .serviceRenovation {
+        width: 250px;
+        height: 300px;
+        margin: 10px ;
+    }
+    .photo {
+        width: 300px;
+        height: 400px;
+    }
 }
