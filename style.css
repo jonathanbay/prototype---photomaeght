@@ -223,7 +223,7 @@ label li {
     height: 630px;
     width: 100%;
     background: rgba(0, 0, 0, 0.459);
-    /* background: #B89D8A; */
+    /* background: url(images/bgPortfolio.jpg) no-repeat center/cover;  */
     margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -242,8 +242,7 @@ label li {
     color: whitesmoke;
     line-height: 1.2em;
     font-size: 25px;
-    font-family: 'Parisienne', cursive;
-    
+    font-family: 'Parisienne', cursive;    
 }
 .categorie:nth-child(2) {
     margin: 40px 25px 25px 25px;
@@ -305,14 +304,7 @@ label li {
     font-family: 'Parisienne', cursive;
     margin: auto;
     z-index: 3;
-}
-.mariage:hover, .famille:hover, .enfant:hover, .concert:hover, .animaux:hover  {  
-    opacity: 0.9;
-}
-.mariage:hover::after, .famille:hover::after, .enfant:hover::after, .concert:hover::after, .animaux:hover::after {  
-    display: block;
-    opacity: 1;
-}
+ }
 .mariage::before {
     content: "Mariage";
 }
@@ -327,6 +319,17 @@ label li {
 }
 .animaux::before {
     content:"Animaux";
+}
+.mariage:hover, .famille:hover, .enfant:hover, .concert:hover, .animaux:hover  {  
+    opacity: 0.9;
+}
+.mariage:hover::after, .famille:hover::after, .enfant:hover::after, .concert:hover::after, .animaux:hover::after {  
+    display: block;
+    opacity: 1;
+}
+.categorie img:hover {
+    transform: scale(1.01);
+    filter: brightness(1.1);
 }
 /* ******************* A propos *************** */
 .aPropos {
@@ -407,7 +410,6 @@ label li {
         margin: 80px auto;
         width: 50%;
         background: rgba(0, 0, 0, 0.459);
-        /* background: #B89D8A; */
         box-shadow: -10px 15px 25px 0 rgba(0, 0, 0, 0.637);
         border-radius: 5px;
         position: relative;
@@ -470,7 +472,7 @@ label li {
     .place, .phone, .email {
         margin: 20px 0;
     }
-    input, textarea, .btnForm {
+    .inputContact, textarea, .btnForm {
 
         border: none;
         width: 100%;
@@ -511,12 +513,12 @@ label li {
     }
     .containerFooter p {
         font-size: 20px;
-        color: rgba(0, 0, 0, 0.459);
+        color: rgba(0, 0, 0, 0.603);
     }
     .containerFooter img {
         height: 100px;
     }
-    /* *********************************page portfolio mariage ****************** */
+    /* *******************page portfolio de toutes les categories ****************** */
     .retour {
         display: flex;
         justify-content: center;
@@ -559,12 +561,16 @@ label li {
     }
 /* *******************style page mes services******************** */
 .identiteService, .cadeauService, .restaurationPhoto {
-    height: 500px;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     margin: 100px auto;
 }
+.cadeauService {
+    background: #f1f1f1;
+}
+
 .identiteService img, .cadeauService img, .restaurationPhoto img {
     width: 300px;
     margin: 30px;
@@ -573,6 +579,43 @@ label li {
     width: 500px;
     margin: 30px;
 }
+/* ********************* inscription/connexion galerie privée ************* */
+
+.formulaires {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100vh;
+    
+}
+.formInscription, .formConnexion, .overlayInscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 8px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.349);
+}
+.formInscription {
+    display: none;
+}
+.inputInscription, .inputConnexion {
+    border: none;
+    width: 80%;
+    padding: 15px 10px;
+    margin: 3px auto 3px auto;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    margin: 1px 50px;
+}
+
+
+
 
 /* ********************** responsive page d'accueil *************** */
 @media screen and (max-width: 1335px) {
